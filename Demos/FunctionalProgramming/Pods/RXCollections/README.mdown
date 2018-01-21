@@ -1,0 +1,31 @@
+#RXCollections
+
+`map`, `filter`, `fold`, and `detect` for Cocoa collections, with as little chaff as possible.
+
+In short:
+
+	#import "RXCollections.h"
+	
+	…
+	
+	[people rx_mapWithBlock:^(id each) { return [each phoneNumber]; }];
+	
+	[ungulates rx_filterWithBlock:^(id each) { return [each stomachCount] == 4; }];
+	
+	[stringsToConcatenate rx_foldInitialValue:@"" withBlock:^(id memo, id each) { return [memo stringByAppendingString:each]; }];
+	
+	[collection rx_detectWithBlock:^(id each) { return [[each name] isEqualToString:@"Richard Feynman"]; }];
+
+##Collections that can be created
+
+Currently, RXCollections will create sets when mapping or filtering sets, or arrays when mapping or filtering anything else. Your collections can map/filter to other types by implementing `+rx_emptyMutableCollection`. One-off maps and filters into other collections can be done with the `…IntoCollection:` variants.
+
+##Collections that can be traversed
+
+Anything that conforms to the NSFastEnumeration protocol can be traversed. This includes arrays, sets, dictionaries, enumerators, and any third-party classes which conform to the protocol.
+
+##Notes
+
+More documentation is available in `RXCollections.h`.
+
+The included Xcode target compiles a static archive, but there’s no real need to use it; you can just link `RXCollections.m` in directly and `#import "RXCollections.h"`. I would recommend this approach, as static archives are a pain.

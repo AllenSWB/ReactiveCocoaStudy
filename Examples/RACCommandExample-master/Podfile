@@ -1,0 +1,12 @@
+platform :ios, '7.0'
+inhibit_all_warnings!
+target 'RACCommandExample' do
+
+pod 'ReactiveCocoa', '~>2.1.0'
+# pod 'ReactiveObjC', '~> 3.1.0'
+pod 'Masonry'
+pod 'libextobjc', '~>0.3'
+pod 'AFNetworking'
+pod 'AFNetworking-RACExtensions', :git => 'https://github.com/knshiro/AFNetworking-RACExtensions.git'
+
+end

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MRCRepoReadmeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="101.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCf-DD-dZZ">
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QeC-z6-8Iy">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6ju-sd-Jzv">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="H3e-q1-HLh"/>
+                                            <constraint firstAttribute="height" constant="22" id="j6F-xl-TUn"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="README.md" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kf9-ZB-cdY">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="JdX-tp-XaR">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Lb9-Ga-Pt2"/>
+                                            <constraint firstAttribute="width" constant="20" id="TQG-wI-9Xu"/>
+                                        </constraints>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jja-c3-5R8"/>
+                                    <constraint firstItem="JdX-tp-XaR" firstAttribute="leading" secondItem="kf9-ZB-cdY" secondAttribute="trailing" constant="8" id="SGb-B4-bh1"/>
+                                    <constraint firstAttribute="centerY" secondItem="JdX-tp-XaR" secondAttribute="centerY" id="Sfj-RZ-ntU"/>
+                                    <constraint firstItem="6ju-sd-Jzv" firstAttribute="leading" secondItem="QeC-z6-8Iy" secondAttribute="leading" constant="15" id="Zkh-9f-w17"/>
+                                    <constraint firstAttribute="centerY" secondItem="6ju-sd-Jzv" secondAttribute="centerY" id="f6g-i8-bbP"/>
+                                    <constraint firstAttribute="centerY" secondItem="kf9-ZB-cdY" secondAttribute="centerY" id="na2-Yv-xUN"/>
+                                    <constraint firstItem="kf9-ZB-cdY" firstAttribute="leading" secondItem="6ju-sd-Jzv" secondAttribute="trailing" constant="8" id="xtE-QK-zj5"/>
+                                </constraints>
+                            </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YR-aE-rsa">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" calendarEvent="YES"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfn-Fr-HRL">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HbW-Jl-jOg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="View all of README.md">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QeC-z6-8Iy" firstAttribute="top" secondItem="vCf-DD-dZZ" secondAttribute="top" id="05N-Ja-dVN"/>
+                            <constraint firstAttribute="trailing" secondItem="1YR-aE-rsa" secondAttribute="trailing" constant="6" id="3We-kl-mT8"/>
+                            <constraint firstItem="QeC-z6-8Iy" firstAttribute="leading" secondItem="vCf-DD-dZZ" secondAttribute="leading" id="5T5-aM-YR6"/>
+                            <constraint firstItem="Kfn-Fr-HRL" firstAttribute="leading" secondItem="vCf-DD-dZZ" secondAttribute="leading" id="EeI-tT-gD6"/>
+                            <constraint firstItem="1YR-aE-rsa" firstAttribute="leading" secondItem="vCf-DD-dZZ" secondAttribute="leading" constant="6" id="Fj8-Uj-YEo"/>
+                            <constraint firstAttribute="trailing" secondItem="QeC-z6-8Iy" secondAttribute="trailing" id="JRH-v9-jaH"/>
+                            <constraint firstAttribute="trailing" secondItem="Kfn-Fr-HRL" secondAttribute="trailing" id="Qu8-QF-zCf"/>
+                            <constraint firstAttribute="bottom" secondItem="Kfn-Fr-HRL" secondAttribute="bottom" id="Zq3-oH-lCb"/>
+                            <constraint firstItem="Kfn-Fr-HRL" firstAttribute="top" secondItem="1YR-aE-rsa" secondAttribute="bottom" id="eyg-4I-1Y6"/>
+                            <constraint firstItem="1YR-aE-rsa" firstAttribute="top" secondItem="QeC-z6-8Iy" secondAttribute="bottom" id="qWH-Jc-IIx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="vCf-DD-dZZ" secondAttribute="trailing" constant="15" id="1cI-2w-l6F"/>
+                    <constraint firstItem="vCf-DD-dZZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="5cW-84-joQ"/>
+                    <constraint firstItem="vCf-DD-dZZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="icO-4W-S2Y"/>
+                    <constraint firstAttribute="bottom" secondItem="vCf-DD-dZZ" secondAttribute="bottom" id="lhf-A0-rqG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="activityIndicatorView" destination="JdX-tp-XaR" id="rHe-7e-ad5"/>
+                <outlet property="readmeButton" destination="Kfn-Fr-HRL" id="lBA-xw-pWi"/>
+                <outlet property="readmeImageView" destination="6ju-sd-Jzv" id="jne-tm-iY5"/>
+                <outlet property="readmeWapperView" destination="QeC-z6-8Iy" id="Kn0-oK-Yui"/>
+                <outlet property="wapperView" destination="vCf-DD-dZZ" id="2iA-aX-nkR"/>
+                <outlet property="webView" destination="1YR-aE-rsa" id="fa7-aH-GNe"/>
+            </connections>
+            <point key="canvasLocation" x="-917.5" y="-633"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MRCExploreCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="104"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMU-EG-fdO">
+                        <string key="text">FreeCodeC
+amp</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1yi-sx-Ut5">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="OhF-YL-IHE"/>
+                            <constraint firstAttribute="height" constant="70" id="kxZ-Yx-U1j"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RMU-EG-fdO" secondAttribute="trailing" id="M33-IN-IXG"/>
+                <constraint firstItem="RMU-EG-fdO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="od8-go-uE5"/>
+                <constraint firstItem="RMU-EG-fdO" firstAttribute="top" secondItem="1yi-sx-Ut5" secondAttribute="bottom" constant="5" id="qJY-Fa-dxc"/>
+                <constraint firstItem="1yi-sx-Ut5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="shH-64-ent"/>
+                <constraint firstItem="1yi-sx-Ut5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xGh-wu-2QM"/>
+            </constraints>
+            <size key="customSize" width="70" height="109"/>
+            <connections>
+                <outlet property="avatarImageView" destination="1yi-sx-Ut5" id="l9y-dC-wfk"/>
+                <outlet property="nameLabel" destination="RMU-EG-fdO" id="hFj-SG-S40"/>
+            </connections>
+            <point key="canvasLocation" x="376" y="399"/>
+        </collectionViewCell>
+    </objects>
+</document>

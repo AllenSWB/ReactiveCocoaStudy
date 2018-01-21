@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MRCStarredReposViewController">
+            <connections>
+                <outlet property="searchBar" destination="JQ2-w8-PxF" id="ssT-Rl-Ury"/>
+                <outlet property="tableView" destination="ubN-gL-vP8" id="V0E-uj-NYZ"/>
+                <outlet property="view" destination="xk5-Me-r63" id="ggX-VR-xNk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="xk5-Me-r63">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ubN-gL-vP8">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <searchBar key="tableHeaderView" contentMode="redraw" id="JQ2-w8-PxF" customClass="MRCSearchBar">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="snr-Wq-cVv"/>
+                        </connections>
+                    </searchBar>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="IsY-NO-0zM"/>
+                        <outlet property="delegate" destination="-1" id="I1L-7W-j9t"/>
+                        <outlet property="emptyDataSetDelegate" destination="-1" id="BN4-o2-C0N"/>
+                        <outlet property="emptyDataSetSource" destination="-1" id="EHv-I3-7P3"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ubN-gL-vP8" secondAttribute="trailing" id="90v-wQ-cy3"/>
+                <constraint firstAttribute="bottom" secondItem="ubN-gL-vP8" secondAttribute="bottom" id="dRw-ev-9rw"/>
+                <constraint firstItem="ubN-gL-vP8" firstAttribute="top" secondItem="xk5-Me-r63" secondAttribute="top" id="ji2-VX-aYV"/>
+                <constraint firstItem="ubN-gL-vP8" firstAttribute="leading" secondItem="xk5-Me-r63" secondAttribute="leading" id="xjN-0h-lr4"/>
+            </constraints>
+            <point key="canvasLocation" x="-560" y="35"/>
+        </view>
+    </objects>
+</document>

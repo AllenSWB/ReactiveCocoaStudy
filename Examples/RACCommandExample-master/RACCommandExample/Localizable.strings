@@ -1,0 +1,11 @@
+/****************************************************************************/
+/* Localization file */
+
+
+"email" = "email";
+"Subscribe Example" = "Subscribe Example";
+"Subscribe" = "Subscribe";
+"Email address" = "Email address";
+"Sending request..." = "Sending request...";
+"Thanks" = "Thanks";
+"Error :(" = "Error :(";
