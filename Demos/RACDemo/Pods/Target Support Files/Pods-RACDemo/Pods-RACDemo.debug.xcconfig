@@ -1,8 +1,8 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ReactiveCocoa" "${PODS_ROOT}/Headers/Public/ReactiveViewModel" "${PODS_ROOT}/Headers/Public/SVProgressHUD"
-LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/ReactiveCocoa" "$PODS_CONFIGURATION_BUILD_DIR/ReactiveViewModel" "$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ReactiveCocoa" -isystem "${PODS_ROOT}/Headers/Public/ReactiveViewModel" -isystem "${PODS_ROOT}/Headers/Public/SVProgressHUD"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"ReactiveCocoa" -l"ReactiveViewModel" -l"SVProgressHUD" -framework "QuartzCore"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/ReactiveCocoa" "${PODS_ROOT}/Headers/Public/ReactiveViewModel" "${PODS_ROOT}/Headers/Public/SVProgressHUD" "${PODS_ROOT}/Headers/Public/YYModel"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/ReactiveCocoa" "$PODS_CONFIGURATION_BUILD_DIR/ReactiveViewModel" "$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD" "$PODS_CONFIGURATION_BUILD_DIR/YYModel"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/ReactiveCocoa" -isystem "${PODS_ROOT}/Headers/Public/ReactiveViewModel" -isystem "${PODS_ROOT}/Headers/Public/SVProgressHUD" -isystem "${PODS_ROOT}/Headers/Public/YYModel"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"ReactiveCocoa" -l"ReactiveViewModel" -l"SVProgressHUD" -l"YYModel" -framework "CoreFoundation" -framework "CoreGraphics" -framework "Foundation" -framework "MobileCoreServices" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

@@ -38,22 +38,6 @@ ReactiveCocoa由四大核心组件组成
 + 调度器：'RACScheduler' 及其子类；
 + 清洁工：'RACDisposable' 及其子类。
 
-####流和序列
-
-####
-
-
-
-
----------
-
-副作用 doNext
-
-聚合信号 combineLatest:reduce:
-
-冷信号 、 热信号
-
-
 
 
 

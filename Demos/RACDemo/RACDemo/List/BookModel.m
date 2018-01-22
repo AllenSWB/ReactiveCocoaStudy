@@ -10,4 +10,14 @@
 
 @implementation BookModel
 
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    // value should be Class or Class name.
+    return @{@"books" : [BookModelSub class]};
+}
+
+@end
+
+@implementation BookModelSub
+
+
 @end

@@ -17,6 +17,8 @@ pod search ReactiveObjC
 + [从 C-41 看 MVVM 和 ReactiveCocoa](http://blog.csdn.net/zzdjk6/article/details/46996571)
 
 + [RAC函数响应式编程](https://www.jianshu.com/p/827f95568cea)
+
++ [ReactiveCocoa知识点运用及结合MVVM实例并简单包含单元测试知识](http://www.code4app.com/thread-13360-1-1.html)
 
 +  唐巧
 
@@ -125,6 +127,8 @@ pod search ReactiveObjC
 
 
 ####Github库
+
++ [RAC](https://github.com/shuaiwang007/RAC.git) RAC的常用用法，提高开发效率
 
 + [ReactiveCocoaChineseResources](https://github.com/ReactiveCocoaChina/ReactiveCocoaChineseResources.git) ReactiveCocoa中文学习资源
 

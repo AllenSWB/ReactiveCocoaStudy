@@ -10,4 +10,15 @@
 
 @interface BookModel : NSObject
 
+@property (strong, nonatomic) NSArray *books;
+
+@end
+
+@interface BookModelSub : NSObject
+
+@property (strong, nonatomic) NSString *subtitle;
+@property (strong, nonatomic) NSString *image;
+@property (strong, nonatomic) NSString *summary;
+@property (strong, nonatomic) NSArray *author;
+
 @end

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BookModel.h"
 
 @interface ListTableViewCell : UITableViewCell
+@property (strong, nonatomic) BookModelSub *model;
 
 @end

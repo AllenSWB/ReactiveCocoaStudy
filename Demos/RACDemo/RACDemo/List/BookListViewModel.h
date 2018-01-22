@@ -7,7 +7,12 @@
 //
 
 #import <ReactiveViewModel/ReactiveViewModel.h>
+#import "BookModel.h"
 
 @interface BookListViewModel : RVMViewModel
+
+@property (strong, nonatomic) RACCommand *requestCommand;
+
+@property (strong, nonatomic) NSArray *models;
 
 @end

@@ -8,6 +8,9 @@ target 'RACDemo' do
 #pod 'ReactiveObjC', '~> 3.1.0'
 pod 'ReactiveViewModel', '~> 0.3'
 pod 'SVProgressHUD'
+pod 'AFNetworking', '~> 3.0'
+pod 'YYModel'
+
   # Pods for RACDemo
 
 end

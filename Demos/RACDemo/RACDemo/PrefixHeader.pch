@@ -14,5 +14,7 @@
 
 #import <ReactiveCocoa.h>
 #import <SVProgressHUD.h>
+#import <AFNetworking.h>
+#import <YYModel/YYModel.h>
 
 #endif /* PrefixHeader_pch */
