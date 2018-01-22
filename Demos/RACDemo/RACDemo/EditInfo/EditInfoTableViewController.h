@@ -11,7 +11,4 @@
 
 @interface EditInfoTableViewController : UITableViewController
 
-@property (strong, nonatomic) RACSubject *delegateSubject;
-
-
 @end
