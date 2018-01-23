@@ -18,15 +18,16 @@
     #import "MRCUtil.h"
     #import "MRCConfig.h"
     #import "MRCErrors.h"
-    #import <OctoKit/OctoKit.h>
     #import "SSKeychain.h"
     #import "MBProgressHUD.h"
 	#import "IQKeyboardManager.h"
     #import <SDWebImage/UIImageView+WebCache.h>
     #import <SDWebImage/UIButton+WebCache.h>
 	#import "MRCViewModelServices.h"
-	#import "OCTUser+MRCPersistence.h"
-	#import "OCTRepository+MRCPersistence.h"
+//    #import "OCTUser+MRCPersistence.h"
+#import "OCTUser+MRCPersistence.h"
+//    #import "OCTRepository+MRCPersistence.h"
+    #import <OCTRepository+MRCPersistence.h>
 	#import <objc/runtime.h>
 	#import <AFNetworking/AFNetworking.h>
 	#import "UIImage+MRCOcticons.h"
@@ -36,7 +37,8 @@
 	#import "UIView+Borders.h"
 	#import "MKNetworkKit.h"
 	#import "WebViewJavascriptBridge.h"
-	#import "OCTRef+MRCUtil.h"
+//    #import "OCTRef+MRCUtil.h"
+#import <OCTRef+MRCUtil.h>
 	#import "SSKeychain+MRCUtil.h"
 	#import "UIImage+Octicons.h"
     #import "TWMessageBarManager.h"

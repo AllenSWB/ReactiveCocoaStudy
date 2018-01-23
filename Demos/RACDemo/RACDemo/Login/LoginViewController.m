@@ -27,11 +27,10 @@
     
     RAC(self.viewModel, phone) = self.phoneTextField.rac_textSignal;
     RAC(self.viewModel, password) = self.passwdTextField.rac_textSignal;
-    
+
     @weakify(self);
 
     self.loginButton.rac_command = self.viewModel.loginCommand;
-    
     
     [self.loginButton.rac_command.enabled subscribeNext:^(NSNumber *x) {
         @strongify(self);
@@ -64,7 +63,7 @@
         [SVProgressHUD showErrorWithStatus:@"登录失败"];
         [SVProgressHUD dismissWithDelay:1];
     }];
-  
+
 }
 
 - (void)dealloc {

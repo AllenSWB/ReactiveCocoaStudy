@@ -28,7 +28,11 @@
     RACSignal *requestsignal = [self.viewModel.requestCommand execute:nil];
     
     
-    [requestsignal subscribeNext:^(NSArray *models) {
+//    [requestsignal subscribeNext:^(NSArray *models) {
+//        [self.tableView reloadData];
+//    }];
+    
+    [RACObserve(self.viewModel, models) subscribeNext:^(id x) {
         [self.tableView reloadData];
     }];
     
@@ -45,7 +49,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.viewModel.models.count;
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListTableViewCell" forIndexPath:indexPath];
