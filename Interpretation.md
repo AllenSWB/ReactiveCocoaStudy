@@ -1,4 +1,15 @@
 
+0123 考核
+
+FP 概念
+柯里化
+publish
+driveon
+sequence
+
+-------
+
+
 首先，从ViewController -> LoginViewController
 
 用到了RACSubject。这个类继承自RACSignal, 同时，它也实现了<RACSubcriber>协议。意味着他比较灵活，既可以做signal来发送信号，又可以做subscriber监听signal。
