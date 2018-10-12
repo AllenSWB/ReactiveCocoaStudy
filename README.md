@@ -2,7 +2,7 @@
 
 pod search ReactiveObjC
 
-####文章
+#### 文章
 
 + [ReactiveCocoa的导入方法（OC项目和Swift项目）](https://www.jianshu.com/p/7c786eee1705)
 
@@ -126,7 +126,7 @@ pod search ReactiveObjC
 + [学习ReactiveCocoa教程（整理的资料）](http://blog.csdn.net/zhonggaorong/article/details/50233421)
 
 
-####Github库
+#### Github库
 
 + [RAC](https://github.com/shuaiwang007/RAC.git) RAC的常用用法，提高开发效率
 
